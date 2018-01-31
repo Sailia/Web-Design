@@ -1,0 +1,16 @@
+body{
+	background-color: purple;
+}
+
+#header{
+	background-color: green;
+	height: 5vw;
+	width: 100vw;
+}
+
+#header h1{
+	color: yellow;
+	font-size: 5vw;
+	width: 25vw;
+	background-color: rgba(25, 65, 81, 0.5)
+}
