@@ -1,0 +1,89 @@
+body{
+	background-image: url("../images/starry_background.gif");
+	background-size: cover; 
+}
+
+.logo{
+	margin-left: auto;
+    display: block;
+    margin-right: auto;
+    width: 50vw;
+}
+
+#logo{
+	width: 56vw
+}
+
+.sprite{
+    margin: 0 auto;
+    width: 20vw;
+    height: 11vw;
+}
+
+#sprite{
+	height: 25vw;
+    position: relative;
+    top: -15vw;
+}
+
+.three_buttons{
+	padding-left: 18vw;
+    padding-top: 4vw;
+    height: 11vw;
+}
+
+/*#left_button{
+	width: 8vw;
+    height: 10vw;
+}
+
+#middle_button{
+	width: 15vw;
+    margin: -11vw 0vw 0vw 24vw;
+    height: 12vw;
+    display: block;
+}
+
+#left_button{
+	width: 11vw;
+    margin: -11vw 0vw 1vw 55vw;
+    height: 9vw;
+    display: block;
+}*/
+
+#left_button, #middle_button, #right_button{
+	display: inline-block;
+    margin: 0 6vw;
+    height: 10vw;
+    width: 10vw;
+}
+
+.text{
+
+}
+
+#left_text, #middle_text, #right_text{
+	display: inline-block;
+    width: 20vw;
+    text-align: center;
+    margin: 0 2vw;
+}
+/*
+TRBL
+TB RL*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
