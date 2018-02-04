@@ -1,6 +1,25 @@
 body{
+	margin: 0 auto;
+}
+
+#index_background{
 	background-image: url("../images/starry_background.gif");
+	background-size: cover;
+	width: 100vw;
+	height: 100vw; 
+	margin: 0 auto;
+}
+
+#body_background_bron{
+	background-image: url("../images/pink_starry_background.gif");
 	background-size: cover; 
+	width: 100vw;	
+	height: 100vw;
+	margin: 0 auto;
+}
+
+.home_container{
+	margin: 0vw 1vw;
 }
 
 .logo{
@@ -8,10 +27,32 @@ body{
     display: block;
     margin-right: auto;
     width: 50vw;
+    height: 30vw;
 }
 
 #logo{
-	width: 56vw
+	width: 56vw;
+    height: 17vw;
+    margin-top: 11vw;
+}
+
+.star{
+	width: 9vw;
+    display: inline;
+    height: 8vw;
+    margin: 2vw 1vw;
+}
+
+#home_text{
+	font-family: 'Luckiest Guy', cursive;
+    font-size: 2vw;
+    color: #f442b9;
+    text-shadow: 2px 2px 4px navy;
+    margin: 0vw 3vw;
+}
+
+.audio_control{
+	margin: -14vw 1vw;
 }
 
 .sprite{
@@ -32,25 +73,6 @@ body{
     height: 11vw;
 }
 
-/*#left_button{
-	width: 8vw;
-    height: 10vw;
-}
-
-#middle_button{
-	width: 15vw;
-    margin: -11vw 0vw 0vw 24vw;
-    height: 12vw;
-    display: block;
-}
-
-#left_button{
-	width: 11vw;
-    margin: -11vw 0vw 1vw 55vw;
-    height: 9vw;
-    display: block;
-}*/
-
 #left_button, #middle_button, #right_button{
 	display: inline-block;
     margin: 0 6vw;
@@ -58,16 +80,54 @@ body{
     width: 10vw;
 }
 
-.text{
+/*make hover left_button*/
 
+.text{
+    padding-left: 20vw;
 }
 
 #left_text, #middle_text, #right_text{
-	display: inline-block;
-    width: 20vw;
-    text-align: center;
-    margin: 0 2vw;
+    display: inline-block;
+    margin: 0vw 7vw;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2vw;
+    color: #f442b9;
+    text-shadow: 2px 2px 4px navy;
 }
+
+.paragraph_title{
+	display: inline-block;
+    margin: 0vw 7vw;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2vw;
+    color: #f442b9;
+    text-shadow: 2px 2px 4px navy;
+}
+
+.logo_2{
+	margin-left: auto;
+    display: block;
+    margin-right: auto;
+    width: 50vw;
+    height: 7vw;
+}
+
+#logo_2{
+	width: 56vw;
+    height: 17vw;
+    margin-top: -12vw;
+}
+
+.video_container{
+	padding-left: 33vw;
+}
+
+#vid{
+	width: 37vw;
+    height: 26vw;
+}
+
+
 /*
 TRBL
 TB RL*/
