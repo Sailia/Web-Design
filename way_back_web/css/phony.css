@@ -80,7 +80,6 @@ body{
     width: 10vw;
 }
 
-/*make hover left_button*/
 
 .text{
     padding-left: 20vw;
@@ -93,14 +92,20 @@ body{
     font-size: 2vw;
     color: #f442b9;
     text-shadow: 2px 2px 4px navy;
+
 }
+
+/*#left_text:hover{
+	    animation: about 2s infinite;
+	    color: blue;
+}*/
 
 .paragraph_title{
 	display: inline-block;
-    margin: 0vw 7vw;
+    margin: 5vw 14vw;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 2vw;
-    color: #f442b9;
+    font-size: 7vw;
+    color: #F7F197;
     text-shadow: 2px 2px 4px navy;
 }
 
@@ -125,6 +130,19 @@ body{
 #vid{
 	width: 37vw;
     height: 26vw;
+    margin-bottom: 6vw;
+}
+
+#hundred_cute{
+	margin-left: 43vw;
+}
+
+.paragraph{
+	margin: 0vw 14vw;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -132,7 +150,11 @@ body{
 TRBL
 TB RL*/
 
-
+/*@keyframes about{
+0% {margin: 0vw 0vw;}
+50%{margin: 0vw 0vw 4vw 0vw;}
+100%{margin: 0vw 0vw;}
+} */
 
 
 
