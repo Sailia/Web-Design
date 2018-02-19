@@ -21,8 +21,8 @@ h3{
 	margin-top: 1em 0;
 	border: 1px solid #333;
 	width: 500px;
-	-webkit-flex-direction: row wrap;
-	-ms-flex-direction: row wrap;
-	flex-direction: row wrap;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 
 }
