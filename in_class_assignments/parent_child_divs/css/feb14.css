@@ -10,7 +10,7 @@ body{
     background-color: #beff2d;
 }
 
-/*all middle childern set to inline block*/
+/*all middle children set to inline block*/
 .mbox1, .mbox2, .mbox3, .mbox4, .mbox5, .mbox6{   
     display: inline-block;
     height: 10vw;
