@@ -1,0 +1,46 @@
+body::before{
+    margin: 0;
+    background: linear-gradient(to top, white, #9ae5ff);
+    background-attachment: fixed;
+}
+
+.circle{
+    background: yellow;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 8vw;
+    margin: 0 auto;
+    transition: width 2s, transform 2s, box-shadow 5s;
+    animation: sun 2s ease-in-out infinite alternate;
+}
+
+.land{
+	background-color: #ffc30b;
+	width: 100vw;
+	height: 25vw;
+	z-index: 100;
+	position: absolute;
+	top: 40vw;
+}
+
+body::after{
+	content: ""
+	position: absolute;
+	background: linear-gradient(to top, yellow, orange);
+	transition: transform 2s;
+
+}
+
+@keyframes sun {
+	
+	from{background: yellow; width: 15vw; height: 15vw;}
+	to{background: yellow; width: 15vw; height: 15vw; margin: 40vw;}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    background-color: #f18fff;
+}
+
+.middle{ 
+    height: 20vw;
+    width: 20vw;
+    margin: 15vw auto;
+    background-color: #beff2d;
+    transition: border-radius 2s, background-color 2s;
+    box-shadow: 3vw 3vw 3vw 3vw yellow;
+}
+
+.middle:hover{
+	background-color: orange;
+	border-radius: 10vw;
+}

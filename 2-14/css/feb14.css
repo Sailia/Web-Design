@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-color: #f18fff;
+}
+
+.middle{ 
+    height: 60vw;
+    width: 100vw;
+    margin: 3vw auto;
+    background-color: #beff2d;
+}
+
+/*all middle childern set to inline block*/
+.mbox1, .mbox2, .mbox3, .mbox4, .mbox5, .mbox6{   
+    display: inline-block;
+    height: 10vw;
+} 
+
+/*first child*/
+.pink{
+    background-color: #d8d6ec;
+    width: 100vw;
+}
+
+/*second third and fourth child common*/
+.purple, .blue, .green{
+    margin: 1vw 1.5vw;    
+}
+
+        /*second child*/
+        .purple{
+            background-color: #d8d6ec;
+            width: 30vw;
+        }
+
+        /*third child*/
+        .blue{
+            background-color: #d8d6ec;
+            width: 30vw;
+        }
+
+        /*fourth child*/
+        .green{
+            background-color: #d8d6ec;
+            width: 30vw;
+        }
+
+
+/*fifth child*/
+.yellow{
+   background-color: #fffac0;
+   width: 45vw;
+   margin: 1vw 2vw 0 2vw;
+}
+
+.orange{
+   background-color: #ffead0;
+   width: 45vw;
+   margin: 1vw 0 0 4vw;
+}
+
+
+
