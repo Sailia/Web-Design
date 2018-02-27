@@ -1,0 +1,27 @@
+body{
+    background-color: red;
+    margin: 0vw;
+}
+
+/*++++++++++ tablet*/
+@media only screen and (min-width: 768px){
+    
+    body{
+    background-color: pink;
+    margin: 0vw;
+    }
+    
+}
+
+/*++++++++++ small screent*/
+@media only screen and (min-width: 1200px){
+    
+     body{
+    background-color: green;
+    margin: 0vw;
+    }
+    
+}
+
+
+

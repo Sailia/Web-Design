@@ -1,0 +1,101 @@
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.blue{
+    background-color: blue;
+}
+
+body{
+    background-color: red;
+    margin: 0vw;
+}
+
+.con{
+    display: flex;
+    width: 90vw;
+    background-color: firebrick;
+    height: 180vw;
+    flex-direction: column;
+    margin: 2vw auto;
+    flex-wrap: nowrap;
+    
+}
+
+.one, .two, .three, .four, .five, .six{
+    flex: 1;
+}
+
+/*++++++++++ tablet*/
+@media only screen and (min-width: 768px){
+    
+    
+    body{
+    background-color: pink;
+    }
+
+    .con{
+        display: flex;
+        width: 90vw;
+    /*    target height of mobile*/
+        background-color: hotpink;
+        height: 130vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2vw auto;
+    }
+
+    .one, .two, .three, .four, .five, .six{
+        flex: none;
+        height: 30vw;
+        width: 30vw;
+    }
+    
+    
+}
+
+/*++++++++++ small screen*/
+@media only screen and (min-width: 1200px){
+    
+    body{
+        background-color: green;
+        margin: 0vw;
+    }
+
+    .con{
+        display: flex;
+        width: 72vw;
+        background-color: hotpink;
+        height: 116vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 9vw auto;
+    }
+    
+    .one, .two, .three, .four, .five, .six{
+        flex: none;
+        height: 30vw;
+        width: 31vw;
+        margin: 4vw auto;
+    }
+    
+}
+
+
+
