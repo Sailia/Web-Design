@@ -4,14 +4,38 @@ body{
     background-attachment: fixed;
 }
 
+/*middle circle*/
 .circle{
     background: yellow;
     width: 15vw;
     height: 15vw;
     border-radius: 8vw;
-    margin: 0 auto;
-    transition: width 2s, transform 2s, box-shadow 5s;
-    animation: sun 2s ease-in-out infinite alternate;
+    margin: 0 auto -30vw;
+    transition: width 2s, transform 2s;
+    animation: sun 2s ease-in-out infinite;
+}
+
+/*circle on the right*/
+.circle::before{
+    content: "";
+    display: block;
+    background: green;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    margin: -15vw 0 0 -45vw;
+    animation: sunTwo 2s ease-in-out infinite;
+}
+
+.circle::after{
+    content: "";
+    display: block;
+    background: red;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    margin: 0vw 3vw 0vw 50vw;
+    animation: sunThree 2s ease-in-out infinite;
 }
 
 .circle2{
@@ -19,9 +43,9 @@ body{
     width: 15vw;
     height: 15vw;
     border-radius: 8vw;
-    margin: 0 auto;
-    transition: width 2s, transform 2s, box-shadow 5s;
-    animation: sun 2s ease-in-out infinite alternate;
+    margin: 0vw 0vw 0vw 50vw;
+    transition: width 2s, transform 2s;
+    animation: sunThree 2s ease-in-out infinite;
 }
 
 .land{
@@ -33,18 +57,30 @@ body{
 	top: 40vw;
 }
 
-body::after{
+/*body::after{
 	content: ""
 	position: absolute;
 	background: linear-gradient(to top, yellow, orange);
 	transition: transform 2s;
 
-}
+}*/
 
 @keyframes sun {
 	
-	from{background: yellow; width: 15vw; height: 15vw;}
-	to{background: yellow; width: 15vw; height: 15vw; margin: 40vw;}
+	0%{margin-top: -15vw;}
+	100%{margin-top: 40vw margin-left: 43vw;}
+}
+
+@keyframes sunTwo {
+    
+    0%{margin-top: -15vw; margin-left: -45vw;}
+    100%{margin-top: 40vw; margin-left: 0vw;}
+}
+
+@keyframes sunThree {
+    
+    0%{margin-top: -15vw; margin-right: 45vw;}
+    100%{margin-top: 40vw; margin-right: 0vw}
 }
 
 
