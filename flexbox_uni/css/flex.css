@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+}
+
+		#flex-container{
+			display: flex;
+		    background-color: #3F51B5;
+		    height: 200vw;
+		    width: 100vw;
+		    margin: 0 auto;
+		    flex-direction: column;
+		}
+
+		.one, .two, .three, .four, .five, .six{
+			flex: none;
+    		height: 30vw;
+		    width: 30vw;
+		    margin: 1vw auto;
+		}
+
+
+	@media only screen and (min-width: 768px){
+		#flex-container{
+			display: flex;
+		    background-color: #3F51B5;
+		    flex-flow: column; 
+		    /*height: 133vw;*/
+		    width: 100vw;
+		}
+
+		.one, .two, .three, .four, .five, .six{
+			margin: 2vw;
+		    background-color: #FFEB3B;
+		    flex-grow: 1;
+		    width: 30vw;
+		    height: 40vw;
+		    flex: 1;
+    		background-color: yellow;
+		}
+	}
+
+
+	@media only screen and (min-width: 1200px) {
+
+		#flex-container{
+			display: flex;
+	    	background-color: #3F51B5;
+	    	flex-flow: row wrap;
+	    	height: 75vw;
+	    	width: 100vw;	
+		}
+
+		.one, .two, .three, .four, .five, .six{
+			margin: 2vw;
+		    background-color: #FFEB3B;
+		    flex-grow: 1;
+		    width: 22vw;
+		    height: 33vw;
+
+		}
+	}
+

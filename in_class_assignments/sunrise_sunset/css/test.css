@@ -45,7 +45,7 @@ body{
     border-radius: 8vw;
     margin: 0vw 0vw 0vw 50vw;
     transition: width 2s, transform 2s;
-    animation: sunThree 2s ease-in-out infinite;
+    animation: sun 2s ease-in-out infinite;
 }
 
 .land{
@@ -77,11 +77,11 @@ body{
     100%{margin-top: 40vw; margin-left: 0vw;}
 }
 
-@keyframes sunThree {
+/*@keyframes sunThree {
     
     0%{margin-top: -15vw; margin-right: 45vw;}
     100%{margin-top: 40vw; margin-right: 0vw}
-}
+}*/
 
 
 

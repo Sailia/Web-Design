@@ -1,0 +1,139 @@
+.one, .three, .five{background-color: skyblue;}
+
+.two, .four, .six{background-color: lightblue;}
+
+
+
+body{
+    background-color: red;
+    margin: 0vw;
+}
+
+.con{
+    display: flex;
+    width: 90vw;
+    background-color: firebrick;
+    height: 180vw;
+    flex-direction: column;
+    margin: 2vw auto;
+    flex-wrap: nowrap;   
+}
+
+.drops{
+    width: 4vw; 
+    height: 4vw;
+    background-color: purple;
+    border-bottom-right-radius: 4vw; 
+    border-bottom-left-radius: 4vw;
+    border-top-left-radius: 4vw;
+    transform: rotate(-45deg);
+    margin: -5vw 0 0 7vw;
+    animation: raindrops 3s ease-in infinite;
+    box-shadow: 3vw 5vw purple,
+    1vw 7vw purple,
+    4vw 8vw purple,
+    10vw 12vw purple;
+}   
+
+@keyframes raindrops{
+    0% {margin: -5vw 0 0 7vw; opacity: 0;}
+    50% { opacity:0; }
+    100% {margin: 10vw 0 0 7vw; opacity: 1;}
+}
+
+.one, .two, .three, .four, .five, .six{
+    flex: 1;
+}
+
+/*rain animation class*/
+/*use margin and display block as it will position relative to its objects. 
+Don't move things around.*/
+/* content blank allows*/
+.rain::before{
+    content: "";
+    height: 20vw;
+    width: 20vw;
+    display: block;
+    margin: 3vw 0 0 10vw;
+    background-color: aliceblue;
+    border-radius: 15vw;
+-moz-box-shadow:    inset -5px 5px 6px #ccc;
+-webkit-box-shadow: inset -5px 5px 6px #ccc;
+    box-shadow:     inset -5px 5px 6px #ccc;
+    transform: rotate(15deg);
+    
+}
+
+/*box shadow inset- allows shadow to be inside of the object*/
+.rain{
+    background-color: aliceblue;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 10vw;
+    margin: 3vw 0 0 3vw;
+    -moz-box-shadow: inset 3px 5px 6px #ccc;
+    -webkit-box-shadow: inset 3px 5px 6px #ccc;
+    box-shadow: inset 3px 5px 6px #ccc;  
+}
+
+.rain::after{
+    content: "";
+    display: block;
+    height: 13vw;
+    width: 13vw;
+    background-color: aliceblue;
+    border-radius: 13vw;
+    margin: 2vw;
+    margin: -12vw 0 0 3vw;
+    transform: rotate(-70deg);
+   /*-moz-box-shadow: inset 3px 5px 6px #ccc;
+    -webkit-box-shadow: inset 3px 5px 6px #ccc;
+    box-shadow: inset 5px 2px 3px 1px #ccc; */ /* check what each px does */
+
+    /*shape at h/x, v/y, at percentage, colour size%, color spread%*/
+    /*you can do as many as you want by copy and pasting this (ellipse at 1% 10%, transparent 10%, rgba(0,0,0,0.2) 20%) and comma */
+
+    background-image: radial-gradient(ellipse at 1% 10%, transparent 10%, rgba(0,0,0,0.2) 20%); /*1% 10% horizontal and vertical*/
+
+}
+
+/*++++++++++ tablet*/
+@media only screen and (min-width: 768px){
+    
+    
+        body{
+        background-color: pink;
+        }
+
+        .con{
+        display: flex;
+        width: 90vw;
+    /*    target height of mobile*/
+        background-color: hotpink;
+        height: 130vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2vw auto;
+        }
+    
+        .one, .two, .three, .four, .five, .six{
+            flex: none;
+            height: 30vw;
+            width: 30vw;
+        }
+    
+    
+}
+
+/*++++++++++ small screent*/
+@media only screen and (min-width: 1200px){
+    
+     body{
+    background-color: green;
+    margin: 0vw;
+    }
+    
+}
+
+
+
