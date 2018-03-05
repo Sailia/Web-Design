@@ -6,7 +6,8 @@ body {margin: 4em 10%; background:#493F5B;}
 	animation-duration: 2s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
- 	animation-delay:1s; 
+ 	animation-delay:1s;
+ 	animation-fill-mode: both; 
 }
 
 @keyframes move-left-right {

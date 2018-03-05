@@ -10,7 +10,7 @@ body {
 }
 
 .blue_robot {
-	
+	transform: scale(2) rotate(45deg) translate(100px, 50px) skew(20deg) ;
 }
 
 
