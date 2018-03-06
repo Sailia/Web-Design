@@ -1,62 +1,120 @@
 body{
 	margin: 0;
+	background-color: #3F51B5;
+	overflow-x: hidden;
 }
 
-		#flex-container{
-			display: flex;
-		    background-color: #3F51B5;
-		    height: 200vw;
-		    width: 100vw;
-		    margin: 0 auto;
-		    flex-direction: column;
-		}
+#flex-container{
+	display: flex;
+	width: 40vw;
+	height: 200vw;
+	flex-direction: column;
+	margin: 0 auto;
+}
 
-		.one, .two, .three, .four, .five, .six{
-			flex: none;
-    		height: 30vw;
-		    width: 30vw;
-		    margin: 1vw auto;
-		}
+.one, .two, .three, .four, .five, .six{
+	flex: 1;
+    margin-top: 1vw;
+    background-color: yellow;
+}
+
+.biscuit{
+	height: 15vw;
+    width: 25vw;
+    background-color: #8c3b00;
+    margin: 6vw auto 0vw;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .5s;
+    box-shadow: -17px 15px 0px rgb(103, 50, 1),
+    -17px 15px 0px rgb(142, 68, 1);
+    border-radius: 3vw;
+}
+
+.biscuit::before{
+	content: "";
+    position: absolute;
+    top: 14px;
+    left: -9px;
+    height: 81%;
+    width: 9px;
+    background: #441e00;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+    border-radius: 3vw;
+}
+
+.biscuit::after{
+	content: "";
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+    height: 8px;
+    width: 90%;
+    background: #441e00;
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+    border-radius: 3vw;
+}
+
+.teepee{
+	height: 0vw;
+    width: 0vw;
+    margin: 3vw auto 0vw;
+    border-bottom: 25vw solid blue;
+    border-right: 12vw solid transparent;
+    border-left: 12vw solid transparent;
+    border-bottom-left-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+}
+
+.teepee::before{
+	height: 2vw;
+    width: 2vw;
+    background-color: black;
+}
+
+/*width, margin, background colour for arranging divs*/
 
 
-	@media only screen and (min-width: 768px){
-		#flex-container{
-			display: flex;
-		    background-color: #3F51B5;
-		    flex-flow: column; 
-		    /*height: 133vw;*/
-		    width: 100vw;
-		}
+@media only screen and (min-width: 767px){
 
-		.one, .two, .three, .four, .five, .six{
-			margin: 2vw;
-		    background-color: #FFEB3B;
-		    flex-grow: 1;
-		    width: 30vw;
-		    height: 40vw;
-		    flex: 1;
-    		background-color: yellow;
-		}
+	#flex-container{
+	display: flex;
+    width: 90vw;
+/*    target height of mobile*/
+
+    height: 129vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2vw auto;
 	}
 
-
-	@media only screen and (min-width: 1200px) {
-
-		#flex-container{
-			display: flex;
-	    	background-color: #3F51B5;
-	    	flex-flow: row wrap;
-	    	height: 75vw;
-	    	width: 100vw;	
-		}
-
-		.one, .two, .three, .four, .five, .six{
-			margin: 2vw;
-		    background-color: #FFEB3B;
-		    flex-grow: 1;
-		    width: 22vw;
-		    height: 33vw;
-
-		}
+	.one, .two, .three, .four, .five, .six{
+		flex: none;
+        height: 40vw;
+        width: 40vw;
+	    margin: 1vw auto;
 	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+	#flex-container{
+		display: flex;
+    	background-color: #3F51B5;
+    	flex-flow: row wrap;
+    	height: 75vw;
+    	width: 100vw;	
+	}
+
+	.one, .two, .three, .four, .five, .six{
+		margin: 2vw;
+	    background-color: #FFEB3B;
+	    flex-grow: 1;
+	    width: 22vw;
+	    height: 33vw;
+
+	}
+}
 

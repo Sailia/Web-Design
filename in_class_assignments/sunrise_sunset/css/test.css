@@ -1,7 +1,8 @@
 body{
     margin: 0;
-    background: linear-gradient(to top, white, #9ae5ff);
     background-attachment: fixed;
+    transition: background 2s;
+    animation: body 2s infinite alternate ease-out;
 }
 
 /*middle circle*/
@@ -11,41 +12,11 @@ body{
     height: 15vw;
     border-radius: 8vw;
     margin: 0 auto -30vw;
+    box-shadow: 
+        43vw 0vw yellow,
+        -43vw 0vw yellow;
     transition: width 2s, transform 2s;
-    animation: sun 2s ease-in-out infinite;
-}
-
-/*circle on the right*/
-.circle::before{
-    content: "";
-    display: block;
-    background: green;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 15vw;
-    margin: -15vw 0 0 -45vw;
-    animation: sunTwo 2s ease-in-out infinite;
-}
-
-.circle::after{
-    content: "";
-    display: block;
-    background: red;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 15vw;
-    margin: 0vw 3vw 0vw 50vw;
-    animation: sunThree 2s ease-in-out infinite;
-}
-
-.circle2{
-    background: yellow;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 8vw;
-    margin: 0vw 0vw 0vw 50vw;
-    transition: width 2s, transform 2s;
-    animation: sun 2s ease-in-out infinite;
+    animation: sun 2s ease-in-out infinite alternate;
 }
 
 .land{
@@ -55,33 +26,28 @@ body{
 	z-index: 100;
 	position: absolute;
 	top: 40vw;
+    transition: background 2s;
+    animation: land 2s ease-in-out infinite alternate;
 }
-
-/*body::after{
-	content: ""
-	position: absolute;
-	background: linear-gradient(to top, yellow, orange);
-	transition: transform 2s;
-
-}*/
 
 @keyframes sun {
 	
 	0%{margin-top: -15vw;}
-	100%{margin-top: 40vw margin-left: 43vw;}
+	100%{margin-top: 40vw; box-shadow: 0vw 0vw yellow; }
 }
 
-@keyframes sunTwo {
+@keyframes body {
     
-    0%{margin-top: -15vw; margin-left: -45vw;}
-    100%{margin-top: 40vw; margin-left: 0vw;}
+    0%{background-color: #9ae5ff; background-attachment: fixed;}
+    80%{background-color: #4d0099; background-attachment: fixed;}
+    100%{background-color: #0f00ba; background-attachment: fixed;}
 }
 
-/*@keyframes sunThree {
+@keyframes land {
     
-    0%{margin-top: -15vw; margin-right: 45vw;}
-    100%{margin-top: 40vw; margin-right: 0vw}
-}*/
+    0%{}
+    100%{background-color: #724800;}
+}
 
 
 
