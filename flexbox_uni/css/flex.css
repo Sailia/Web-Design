@@ -14,8 +14,9 @@ body{
 
 .one, .two, .three, .four, .five, .six{
 	flex: 1;
-    margin-top: 1vw;
+    margin: 1vw 0vw;
     background-color: yellow;
+    position: relative;
 }
 
 .biscuit{
@@ -24,21 +25,18 @@ body{
     background-color: #8c3b00;
     margin: 6vw auto 0vw;
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
-    transition: .5s;
-    box-shadow: -17px 15px 0px rgb(103, 50, 1),
-    -17px 15px 0px rgb(142, 68, 1);
+    box-shadow: -5vw 4vw 0vw -1vw rgb(103, 50, 1), -7vw 6vw 0vw -3px rgb(142, 68, 1);
     border-radius: 3vw;
 }
 
 .biscuit::before{
 	content: "";
     position: absolute;
-    top: 14px;
-    left: -9px;
+    top: 4vw;
+    left: -2.5vw;
     height: 81%;
-    width: 9px;
+    width: 3vw;
     background: #441e00;
-    transition: .5s;
     transform: rotate(0deg) skewY(-45deg);
     border-radius: 3vw;
 }
@@ -60,7 +58,7 @@ body{
 	height: 0vw;
     width: 0vw;
     margin: 3vw auto 0vw;
-    border-bottom: 25vw solid blue;
+    border-bottom: 25vw solid #f2c265;
     border-right: 12vw solid transparent;
     border-left: 12vw solid transparent;
     border-bottom-left-radius: 10vw;
@@ -68,10 +66,161 @@ body{
 }
 
 .teepee::before{
-	height: 2vw;
-    width: 2vw;
-    background-color: black;
+	content: "";
+    position: absolute;
+    border-right: 5vw solid transparent;
+    border-left: 5vw solid transparent;
+    border-bottom: 10vw solid #7e4200;
+    top: 18vw;
+    left: 15vw;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
 }
+
+.teepee::after{
+	content: "";
+    position: absolute;
+    height: 13vw;
+    width: 4vw;
+    bottom: 9vw;
+    left: 18vw;
+    border-bottom-right-radius: 3vw;
+    border-top-right-radius: 3vw;
+    transform: rotate(-92deg);
+    background-color: black;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.underground{
+	height: 20vw;
+    width: 20vw;
+    border-radius: 14vw;
+    background-color: white;
+    margin: 6vw auto 0vw;
+    box-shadow: 0vw 0vw 0vw 4vw red;
+}
+
+.underground::before{
+	content: "";
+    position: absolute;
+    width: 5vw;
+    height: 0vw;
+    margin: -9vw 8vw;
+    border-bottom: 38vw solid blue;
+    transform: rotate(90deg);
+}
+
+.gherkin{
+	height: 18vw;
+    width: 21vw;
+    border-bottom-left-radius: 19vw;
+    border-top-right-radius: 17vw;
+    border-top-left-radius: 1vw;
+    border-bottom-right-radius: 3vw;
+    transform: rotate(50deg);
+    position: absolute;
+    overflow: hidden;
+    margin: 7vw auto 0vw;
+    left: 9.5vw;
+    z-index: 1;
+    background-color: #4e77ba;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gherkin::before{
+	content: '';
+    width: 6vw;
+    height: 17vw;
+    /* border-radius: 8vw; */
+    background-color: #364e74;
+    position: absolute;
+    bottom: 8vw;
+    transform: rotate(40deg);
+}
+
+.gherkin_first_base{
+	width: 13vw;
+    height: 12vw;
+    left: 13.2vw;
+    bottom: 2vw;
+    position: absolute;
+    /* border-top-right-radius: 9vw; */
+    transform: rotate(-72deg);
+    background-color: #4e77ba;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);	
+}
+
+
+.clock{
+	height: 13vw;
+    width: 13vw;
+    background-color: white;
+    margin: -18vw auto 0vw;
+    border-radius: 8vw;
+    box-shadow: 0vw 0vw 0vw 2vw brown, 8vw 5vw 0vw -1vw #800000, -8vw 5vw 0vw -1vw #800000;
+}
+
+.clock_base{
+	height: 14vw;
+    width: 34vw;
+    background-color: brown;
+    margin: 10vw auto 0vw;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+}
+
+.baked_beans{
+	width: 18vw;
+    height: 22vw;
+    left: 10vw;
+    top: 3vw;
+    position: absolute;
+    background-color: #019a7f;
+    margin: 2vw auto;	
+}
+
+.baked_beans::before{
+	content: "";
+    width: 40.8vw;
+    height: 4vw;
+    left: -12.5vw;
+    top: -1.4vw;
+    position: absolute;
+    border-radius: 8vw;
+    background-color: #92afb8;
+    clip-path: ellipse(22% 50% at 53% 49%);
+}
+
+.baked_beans::after{
+	content: "";
+	top: 19.6vw;
+    width: 40.8vw;
+    height: 4vw;
+    left: -12.5vw;
+    position: absolute;
+    border-radius: 8vw;
+    background-color: #019a7f;
+    clip-path: ellipse(22% 50% at 53% 49%);
+}
+
+.baked_beans_label{
+    height: 10vw;
+    width: 14vw;
+    margin: 12vw;
+    top: 3vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    background-color: black;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 17% 100%);
+}
+
+.baked_beans_label::before{
+	c
+}
+
 
 /*width, margin, background colour for arranging divs*/
 
@@ -79,14 +228,14 @@ body{
 @media only screen and (min-width: 767px){
 
 	#flex-container{
-	display: flex;
-    width: 90vw;
-/*    target height of mobile*/
+		display: flex;
+	    width: 90vw;
+	/*    target height of mobile*/
 
-    height: 129vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2vw auto;
+	    height: 129vw;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    margin: 2vw auto;
 	}
 
 	.one, .two, .three, .four, .five, .six{
