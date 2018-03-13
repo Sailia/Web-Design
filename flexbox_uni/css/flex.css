@@ -27,6 +27,7 @@ body{
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
     box-shadow: -5vw 4vw 0vw -1vw rgb(103, 50, 1), -7vw 6vw 0vw -3px rgb(142, 68, 1);
     border-radius: 3vw;
+    animation: biscuit_top 2s 2s infinite;
 }
 
 .biscuit::before{
@@ -39,6 +40,7 @@ body{
     background: #441e00;
     transform: rotate(0deg) skewY(-45deg);
     border-radius: 3vw;
+    animation: biscuit_cream 2s linear 2s infinite alternate;
 }
 
 .biscuit::after{
@@ -52,6 +54,7 @@ body{
     transition: .5s;
     transform: rotate(0deg) skewX(-45deg);
     border-radius: 3vw;
+    animation: biscuit_cream_two 2s linear 2s infinite alternate;
 }
 
 .teepee{
@@ -75,6 +78,7 @@ body{
     left: 15vw;
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
+    animation: teepee_bounce 1s linear 1s infinite alternate;
 }
 
 .teepee::after{
@@ -89,6 +93,7 @@ body{
     transform: rotate(-92deg);
     background-color: black;
     clip-path: polygon(100% 0, 0 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    animation: teepee_shake 1s linear 1s infinite alternate;
 }
 
 .underground{
@@ -98,6 +103,7 @@ body{
     background-color: white;
     margin: 6vw auto 0vw;
     box-shadow: 0vw 0vw 0vw 4vw red;
+    animation: underground_circle 2s linear 2s infinite alternate;
 }
 
 .underground::before{
@@ -108,6 +114,33 @@ body{
     margin: -9vw 8vw;
     border-bottom: 38vw solid blue;
     transform: rotate(90deg);
+
+}
+
+.underground::after{
+	content: "";
+    width: 8vw;
+    height: 9vw;
+    bottom: 13vw;
+    left: 1.5vw;
+    background-color: blue;
+    position: absolute;
+    transform: rotate(90deg);
+    clip-path: ellipse(25% 40% at 50% 50%);
+    animation: underground_bar 1s linear infinite alternate;
+}
+
+.underground_bottom_bump {
+    width: 8vw;
+    height: 9vw;
+    bottom:11vw;
+    left: 1.5vw;
+    z-index: 1;
+    background-color: blue;
+    position: absolute;
+    transform: rotate(90deg);
+    clip-path: ellipse(25% 40% at 50% 50%);
+    animation: underground_bar_two 2s linear infinite alternate;
 }
 
 .gherkin{
@@ -136,6 +169,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     position: absolute;
     bottom: 8vw;
     transform: rotate(40deg);
+    animation: gherkin_top 0.82s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
 }
 
 .gherkin_first_base{
@@ -144,7 +178,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     left: 13.2vw;
     bottom: 2vw;
     position: absolute;
-    /* border-top-right-radius: 9vw; */
     transform: rotate(-72deg);
     background-color: #4e77ba;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);	
@@ -158,6 +191,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: -18vw auto 0vw;
     border-radius: 8vw;
     box-shadow: 0vw 0vw 0vw 2vw brown, 8vw 5vw 0vw -1vw #800000, -8vw 5vw 0vw -1vw #800000;
+    animation: clock 2s linear infinite 2s alternate;
 }
 
 .clock_base{
@@ -167,6 +201,31 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: 10vw auto 0vw;
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
+    z-index: none;
+}
+
+.clock_base::before {
+	content: "";
+    height: 4vw;
+    width: 1vw;
+    left: 21vw;
+    top: 10.5vw;
+    transform: rotate(90deg);
+    background-color: black;
+    position: absolute;
+    animation: clock_small_hand 2s linear infinite 2s alternate;
+
+}
+
+.clock_base::after {
+	content: "";
+    height: 6vw;
+    width: 1vw;
+    left: 19vw;
+    top: 7vw;
+    background-color: black;
+    position: absolute;
+    animation: clock_large_hand 2s linear infinite 2s alternate;
 }
 
 .baked_beans{
@@ -217,12 +276,119 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     clip-path: polygon(0 0, 100% 0, 82% 100%, 17% 100%);
 }
 
-.baked_beans_label::before{
-	c
+/*could not do a before pseudo on below.*/
+
+.baked_beans_label_two{
+	content: "";
+    width: 12vw;
+    left: 13vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    top: 11vw;
+    height: 8vw;
+    position: absolute;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 17% 100%);
+
+
 }
 
 
 /*width, margin, background colour for arranging divs*/
+
+@keyframes biscuit_top {
+  	0%, 20%, 50%, 80%, 100% {transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);} 
+   40% {transform: rotate(160deg);} 
+   60% {transform: rotate(359deg);} 
+
+}
+
+@keyframes biscuit_cream {
+  	0%, 20%, 50%, 80%, 100% {transform: translateX(0);} 
+   40% {transform: translateX(-10vw);} 
+   60% {transform: translateX(-5vw);} 
+
+}
+
+@keyframes biscuit_cream_two {
+  	0%, 20%, 50%, 80%, 100% {transform: translateX(0);} 
+   40% {transform: translateX(10vw) translateY(10vw);} 
+   60% {transform: translateZ(5vw) translateY(5vw);} 
+
+}
+
+@keyframes teepee_bounce{
+	0%, 20%, 50%, 80%, 100% {}
+	40% {transform: skew(10deg);}
+	60% {transform: skew(20deg);}
+}
+
+@keyframes teepee_shake{
+	0%, 20%, 50%, 80%, 100% {}
+	40% {transform: rotate(25deg);}
+	60% {transform: rotate(50deg);}
+}
+
+@keyframes underground_circle {
+	0%, 20%, 50%, 80%, 100% {}
+	40% {box-shadow: 0 0 0 1vw rgba(255, 0, 0, 0.51);}
+	100% {box-shadow: 0 0 0 2vw rgba(255, 0, 0, 0.25);}
+}
+
+
+@keyframes underground_bar {
+	0%, 20%, 50%, 80%, 100% {}
+	10% { left: 25%; } 
+	20% { bottom: 13vw; }
+	30%	{ left: 50%; } 
+	50% {bottom: 9vw;}
+	60% { left: 60%; } 
+	70% {bottom: 13vw;}
+	80% {left: 75%; } 
+	100% { bottom: 9vw; }
+}
+
+@keyframes underground_bar_two {
+	0%, 20%, 50%, 80%, 100% {bottom: 9vw;}
+	10% { left: 25%; } 
+	20% { bottom: 11vw; }
+	30%	{ left: 50%; } 
+	50% {bottom: 9vw;}
+	60% { left: 60%; } 
+	70% {bottom: 11vw;}
+	80% {left: 75%; } 
+	100% { bottom: 9vw; }
+}
+
+@keyframes gherkin_top {
+	0%, 20%, 50%, 80%, 100% {transform: rotate(40deg);}
+  10%, 90% { transform: translate3d(-1vw, 0, 0) rotate(40deg);}
+  
+  20%, 80% { transform: translate3d(2vw, 0, 0) rotate(40deg);}
+
+  30%, 50%, 70% {transform: translate3d(-4vw, 0, 0) rotate(40deg);}
+
+  40%, 60% { transform: translate3d(4vw, 0, 0) rotate(40deg);}
+}
+
+@keyframes clock {
+	0%, 20%, 50%, 80%, 100% {}
+	40% {box-shadow: 0vw 0vw 0vw 3vw brown, 8vw 5vw 0vw -1vw #ff8700, -8vw 5vw 0vw -1vw #ff8700;}
+	100% {box-shadow: 0vw 0vw 0vw 4vw brown, 8vw 5vw 0vw -1vw #ffe100, -8vw 5vw 0vw -1vw #ffe100;}
+}
+
+@keyframes clock_large_hand {
+	0%, 20%, 50%, 80%, 100% {}
+	40% {transform: rotate(10deg);}
+	100% {transform: rotate(-10deg);}
+}
+
+@keyframes clock_small_hand {
+	0%, 20%, 50%, 80%, 100% {}
+	40% {transform: rotate(69deg);}
+	100% {top: 11.3vw transform: rotate(106deg);}
+}
+
 
 
 @media only screen and (min-width: 767px){
@@ -236,6 +402,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	    flex-direction: row;
 	    flex-wrap: wrap;
 	    margin: 2vw auto;
+	}
+
+	.underground_bottom_bump{
+		bottom: 20vw;
 	}
 
 	.one, .two, .three, .four, .five, .six{
