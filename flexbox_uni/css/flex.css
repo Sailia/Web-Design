@@ -133,7 +133,7 @@ body{
 .underground_bottom_bump {
     width: 8vw;
     height: 9vw;
-    bottom:11vw;
+    top:10vw;
     left: 1.5vw;
     z-index: 1;
     background-color: blue;
@@ -167,7 +167,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     /* border-radius: 8vw; */
     background-color: #364e74;
     position: absolute;
-    bottom: 8vw;
+    top: -4vw;
     transform: rotate(40deg);
     animation: gherkin_top 0.82s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
 }
@@ -243,11 +243,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     width: 40.8vw;
     height: 4vw;
     left: -12.5vw;
-    top: -1.4vw;
+    top: -3.4vw;
     position: absolute;
     border-radius: 8vw;
     background-color: #92afb8;
     clip-path: ellipse(22% 50% at 53% 49%);
+    animation: baked_beans_lid 1s linear 1s infinite alternate;
 }
 
 .baked_beans::after{
@@ -273,13 +274,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-bottom-left-radius: 5vw;
     border-bottom-right-radius: 5vw;
     position: absolute;
+    z-index: 1;
     clip-path: polygon(0 0, 100% 0, 82% 100%, 17% 100%);
 }
 
 /*could not do a before pseudo on below.*/
 
 .baked_beans_label_two{
-	content: "";
     width: 12vw;
     left: 13vw;
     border-top-left-radius: 2vw;
@@ -288,11 +289,38 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     height: 8vw;
     position: absolute;
     background-color: black;
+    z-index: 0;
     clip-path: polygon(0 0, 100% 0, 82% 100%, 17% 100%);
-
-
 }
 
+.baked_beans_label_border{
+    width: 14vw;
+    left: 12vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    top: 10.5vw;
+    height: 8vw;
+    position: absolute;
+    background-color: yellow;
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 0, 82% 91%, 17% 100%);
+}
+
+.baked_beans_label_two_border{
+    height: 10.5vw;
+    width: 15.75vw;
+    left: -0.8vw;
+    margin: 12vw;
+    top: 3vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    background-color: yellow;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: absolute;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 17% 100%);
+}
 
 /*width, margin, background colour for arranging divs*/
 
@@ -389,6 +417,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	100% {top: 11.3vw transform: rotate(106deg);}
 }
 
+@keyframes baked_beans_lid {
+	0%, 20%, 40%, 60%, 80% 100% { top: -4.4vw; }
+	40% { transform: rotate(5deg);}
+	80% {transform: rotate(10deg);}
+	90% {transform: rotate(15deg);}
+	95% {top: -2.4vw;}
+	100% {top: -1.4vw;}
+}
+
 
 
 @media only screen and (min-width: 767px){
@@ -404,9 +441,71 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	    margin: 2vw auto;
 	}
 
-	.underground_bottom_bump{
-		bottom: 20vw;
+	.biscuit{
+		margin: 10vw auto 0vw;
 	}
+
+	.teepee{
+		margin: 8vw auto 0vw;
+	}
+
+	.teepee::before{
+		top: 23vw;
+	}
+
+	.teepee::after{
+		top: 15vw;
+		height: 11vw;
+	}
+
+	.underground{
+		margin: 11vw auto 0vw;
+	}
+
+	.underground::after{
+		top: 15vw;
+	}
+
+	.underground_bottom_bump{
+		top: 18vw;
+	}
+
+	.gherkin{
+		margin: 11vw auto 0vw;
+	}
+
+	.gherkin_first_base{
+		top: 21vw;
+	}
+
+	.clock_base{
+		margin: 17vw auto 0vw;
+	}
+
+	.clock_base::before{
+		top: 17.5vw;
+	}
+
+	.clock_base::after{
+		top: 14vw;
+	}
+
+	.baked_beans{
+		top: 7vw;
+	}
+
+	.baked_beans_label_border{
+		top: 14.5vw;
+	}
+
+	.baked_beans_label, .baked_beans_label_two_border{
+		top: 7vw;
+	}
+
+	.baked_beans_label_two{
+		top: 15vw;
+	}
+
 
 	.one, .two, .three, .four, .five, .six{
 		flex: none;
@@ -425,6 +524,39 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     	flex-flow: row wrap;
     	height: 75vw;
     	width: 100vw;	
+	}
+
+	.biscuit{
+		height: 11vw;
+    	width: 20vw;
+    	margin: 7vw auto 0vw;
+	}
+
+	.biscuit::after{
+		height: 2vw;
+	    width: 17vw;
+	    top: 11vw;
+	}
+
+	.teepee{
+		margin: 4vw auto 0vw;
+	}
+
+	.teepee::before{
+		top: 19vw;
+    	left: 10vw;
+	}
+
+	.teepee::after{
+		top: 10vw;
+	    height: 11vw;
+	    left: 13vw;
+	}
+
+	.underground{
+		margin: 9vw auto 0vw;
+		height: 15vw;
+    	width: 15vw;
 	}
 
 	.one, .two, .three, .four, .five, .six{
