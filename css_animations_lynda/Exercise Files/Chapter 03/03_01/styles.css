@@ -23,11 +23,18 @@
 	.fcloud01 {
 		top:100px;
 		z-index:100;
+		animation: drift 25s linear infinite;
   	}
 			
 	.fcloud02 {
 		top:240px;
 		z-index: 200;	
+		animation: drift 35s 10s linear infinite backwards;
+	}
+
+@keyframes drift {
+	from { transform: translateX(-225px); }
+	to { transform: translateX(1350px);}
 }
 
 
