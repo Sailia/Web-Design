@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: yellow;
+}
+
+#hide{
+    background-color: hotpink;
+    width: 50vw;
+    height: 8vw;
+    color: yellow;
+    border-radius: 2vw;
+    margin: 20vw auto;
+    text-align: center;
+    padding-top: 5vw;
+/*    font: font-style font-variant font-weight font-size/line-height font-family;*/
+     font: italic bold 3vw Sans-serif;
+}
+
+#show{
+    background: url(../images/hugs.gif) no-repeat center center;
+    height: 43vw;
+    width: 58vw;
+    margin: -23vw auto;
+    -webkit-clip-path: circle(29%);
+    clip-path: circle(29%);
+                /*http://bennettfeely.com/clippy/*/
+}
+
+

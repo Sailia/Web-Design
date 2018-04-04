@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    background-color: yellow;
+}
+
+#hide{
+    
+    background-color: hotpink;
+    width: 50vw;
+    height: 8vw;
+    color: yellow;
+    border-radius: 2vw;
+    margin: 20vw auto;
+    text-align: center;
+    padding-top: 5vw;
+/*    font: font-style font-variant font-weight font-size/line-height font-family;*/
+     font: italic bold 3vw Sans-serif;
+}
+
+
