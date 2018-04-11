@@ -1,17 +1,20 @@
 //EVENT BASICS
 
     //// Event setup using a convenience method
-    $( "p" ).click(function() {
-       console.log( "You clicked a paragraph!" );
-    });
+    // $( "p" ).click(function() {
+    //    console.log( "You clicked a paragraph!" );
+    // });
  
-    //// Equivalent event setup using the `.on()` method
-    //$( "p" ).on( "click", function() {
+    // // Equivalent event setup using the `.on()` method
+    // $( "p" ).on( "click", function() {
     //    console.log( "click" );
-    //});
+    // });
 
-    ////adding things to the body
-    //$( "<p id='hide'>yooooooo!</p>" ).appendTo( document.body );
+    //adding things to the body
+    $("#hide").click(function(){
+       $( "<p id='hide'>yooooooo!</p>" ).appendTo( document.body ); 
+    });
+    
 
 //// tracking events
     //   $( "#hide" ).on({
