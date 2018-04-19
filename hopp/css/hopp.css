@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+.main{
+    background-color: #ffffff;
+    width: 100vw;
+    height:178vw;
+    margin: 0 auto;
+}
+
+.business_page{
+    background-color: #4caf50;
+    width: 100vw;
+    height:178vw;
+}
+
+.expanded_video{
+    background-color: #dfdfdf;
+    width: 100vw;
+    height:178vw;
+}
+
+.header{
+    margin: 0 auto;
+}
+
+.menu_bar{
+    display: inline-block;
+    margin: 12vw 7vw;
+}
+
+.logo{
+    display: inline-block;
+    margin: 4vw 17vw;
+}
+
+.search{
+    display: inline-block;
+}
+
+.content{
+    display: inline-block;
+    margin: 0vw 12vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
