@@ -2,38 +2,41 @@
 $( document ).ready(function() {
   //feature 2 - CLICK TRACKER BG COLOR CHANGER
     // * variable to hold given click
-    var i = 0;
-    var colour = "  green";
 
-    $("#menu").click(function(){
-    	$("#menu").show("slow");
-        $("#menu").hide("slow");
+    $(".business_page, .expanded_video").hide();
+    $(".business_selection_one").click(function(){
+        $(".business_page").show();
+        $(".main").hide();
     });
+    // $("#menu").click(function(){
+    // 	$("#menu").show("slow");
+    //     $("#menu").hide("slow");
+    // });
 
     // clickable object
     	// update the object with the variable to display the given number of clicks
     	
-    $("p#screen_one_p").click(function(){
-    $(this).html(i+=1);
+    // $("p#screen_one_p").click(function(){
+    // $(this).html(i+=1);
 
     // conditional statements - change a state based on click number (new colour with each click)
+//     var i = 0;
+// 	    if(i==1){
+// 	    	$('#feature_one').addClass("green");
+// 	    	$('p#screen_one_p').append(colour);
+// 	    } else if(i==2){
+// 	    	colour = "  pink";
+// 	    	$('p#screen_one_p').append(colour);
+// 	    	$('#feature_one').addClass("pink");
+// 	    } else if(i==3){
+// 	    	colour = "  blue";
+// 	    	$('p#screen_one_p').append(colour);
+// 	    	$('#feature_one').addClass("blue");
+// 	    } else if(i==4 || i>4){
+// 	    	$(this).html(" done");
+// 	    }
 
-	    if(i==1){
-	    	$('#feature_one').addClass("green");
-	    	$('p#screen_one_p').append(colour);
-	    } else if(i==2){
-	    	colour = "  pink";
-	    	$('p#screen_one_p').append(colour);
-	    	$('#feature_one').addClass("pink");
-	    } else if(i==3){
-	    	colour = "  blue";
-	    	$('p#screen_one_p').append(colour);
-	    	$('#feature_one').addClass("blue");
-	    } else if(i==4 || i>4){
-	    	$(this).html(" done");
-	    }
-
-	});
+// 	});
     
 });
 

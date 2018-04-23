@@ -2,23 +2,10 @@ body{
     margin: 0;
 }
 
-.main{
+.main, .business_page{
+    width: 100vw;
+    height:178vw;
     background-color: #ffffff;
-    width: 100vw;
-    height:178vw;
-    margin: 0 auto;
-}
-
-.business_page{
-    background-color: #4caf50;
-    width: 100vw;
-    height:178vw;
-}
-
-.expanded_video{
-    background-color: #dfdfdf;
-    width: 100vw;
-    height:178vw;
 }
 
 .header{
@@ -35,16 +22,30 @@ body{
     margin: 4vw 17vw;
 }
 
+.small_logo{
+    display: inline-block;
+    margin: 9vw 22vw;
+    height: 10vw;
+}
+
 .search{
     display: inline-block;
+    margin: 11vw 4vw;
 }
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+}   
 
 .content{
     display: inline-block;
     margin: 0vw 12vw;
 }
 
-
+.business_selection_one{
+    position: absolute;
+}
 
 
 
