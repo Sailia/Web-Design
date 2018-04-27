@@ -3,7 +3,7 @@ $( document ).ready(function() {
   //feature 2 - CLICK TRACKER BG COLOR CHANGER
     // * variable to hold given click
 
-    $(".business_page, .expanded_video").hide();
+    $(".business_page, .video_content").hide();
     $(".business_selection_one").click(function(){
         $(".business_page").show();
         $(".main").hide();

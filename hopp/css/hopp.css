@@ -10,32 +10,50 @@ body{
 
 .header{
     margin: 0 auto;
+    height: 10vw;
+    font-weight: 10vw;
 }
 
 .menu_bar{
     display: inline-block;
-    margin: 12vw 7vw;
+    margin: 10vw 7vw;
 }
 
 .logo{
     display: inline-block;
     margin: 4vw 17vw;
 }
-
-.small_logo{
-    display: inline-block;
-    margin: 9vw 22vw;
-    height: 10vw;
-}
-
+    
 .search{
     display: inline-block;
     margin: 11vw 4vw;
 }
 
-h1{
+.subtitle, .subtitle_two{
     font-family: 'Montserrat', sans-serif;
-    font-size: 4vw;
+    font-size: 5vw;  
+    position: absolute;
+    margin-top: 15vw;
+    color: #606060;
+}
+
+.subtitle_two{
+    margin: 131vw 0vw;
+}
+
+h1{
+    margin: 1vw 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    position: absolute;
+    color: #e91e63;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    margin: 24vw 1vw;
 }   
 
 .content{
@@ -43,14 +61,67 @@ h1{
     margin: 0vw 12vw;
 }
 
-.business_selection_one{
+.business_selection_one, .business_selection_two, .business_selection_three, .business_selection_four{
+    position: absolute;
+    background-color: #ffffff;
+    height: 30vw;
+    width: 78vw;
+    margin: 23vw 0vw 0vw 0vw;
+    border: 0.5vw solid #e91e63;
+    border-radius: 1vw;
+}
+
+.business_image, .hendrix_image, .great_queen_street_image, .KOKO_dance_image{
+    position: absolute;
+    margin: 0vw 0vw 0vw 48.5vw;
+    border-radius: 1vw;
+    width: 29.5vw;
+}
+
+.hendrix_image{
+    height: 30vw;
+}
+
+.great_queen_street_image{
+    height: 30vw;
+}
+.business_selection_two{
+    margin: 59vw 0vw 0vw 0vw;
+}
+
+.business_selection_three{
+    margin: 95vw 0vw 0vw 0vw;
+}
+
+.business_selection_four{
+    margin: 143vw 0vw;
+}
+
+.business_page_logo_one{
+    width: 16vw;
+    margin: 6vw 0vw 9vw 55vw;
     position: absolute;
 }
 
+.five_star_rating, .four_star_rating, .three_star_rating{
+    position: absolute;
+    width: 20vw;
+    margin: 19vw 1vw;
+}
 
+.four_star_rating{
+    width: 15vw;
+}
 
+.three_star_rating{
+    width: 11vw;
+}
 
-
+.video_content{
+    background-color: bisque;
+    height: 50vw;
+    margin-top: 14vw;
+}
 
 
 
