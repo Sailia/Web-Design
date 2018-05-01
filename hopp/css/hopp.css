@@ -8,20 +8,35 @@ body{
     background-color: #ffffff;
 }
 
-.header{
+.header, .header_two{
     margin: 0 auto;
     height: 10vw;
-    font-weight: 10vw;
 }
 
-.menu_bar{
+.header_two{
+    margin: 0 auto;
+    padding-top: 8vw;
+}
+
+.menu_bar, .menu_bar_two{
     display: inline-block;
     margin: 10vw 7vw;
+}
+
+.menu_bar_two{
+    position: absolute;
+    margin: 9vw 7vw;
 }
 
 .logo{
     display: inline-block;
     margin: 4vw 17vw;
+}
+
+.business_page_logo_one{
+    width: 16vw;
+    margin: 5vw 0vw 0vw 79vw;
+    display: inline-block;
 }
     
 .search{
@@ -78,6 +93,14 @@ h2{
     width: 29.5vw;
 }
 
+.business_image{
+    margin: 0vw 0vw 0vw 47vw;
+}
+
+.KOKO_dance_image{
+    height: 30vw;
+}
+
 .hendrix_image{
     height: 30vw;
 }
@@ -97,12 +120,6 @@ h2{
     margin: 143vw 0vw;
 }
 
-.business_page_logo_one{
-    width: 16vw;
-    margin: 6vw 0vw 9vw 55vw;
-    position: absolute;
-}
-
 .five_star_rating, .four_star_rating, .three_star_rating{
     position: absolute;
     width: 20vw;
@@ -117,15 +134,23 @@ h2{
     width: 11vw;
 }
 
-.video_content{
-    background-color: bisque;
-    height: 50vw;
-    margin-top: 14vw;
+#map {
+    position: absolute;
+    height: 60vw;
+    width: 48vw;
+    margin: 30vw 0vw 0vw 49vw;
 }
 
+.video{
+    width: 980px;
+    height: 900px;
+    margin: -160vw 0vw 0vw 0vw;
+    position: absolute;
+}
 
-
-
+.address_info{
+    margin: 30vw 2vw;
+}
 
 
 

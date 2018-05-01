@@ -1,17 +1,51 @@
 
-$( document ).ready(function() {
+// $( document ).ready(function() {
   //feature 2 - CLICK TRACKER BG COLOR CHANGER
     // * variable to hold given click
 
-    $(".business_page, .video_content").hide();
-    $(".business_selection_one").click(function(){
-        $(".business_page").show();
-        $(".main").hide();
-    });
-    // $("#menu").click(function(){
-    // 	$("#menu").show("slow");
-    //     $("#menu").hide("slow");
+    // $(".business_page, .video_content").hide();
+    // $(".business_selection_one").click(function(){
+    //     $(".business_page").show();
+    //     $(".main").hide();
     // });
+
+$(document).ready(function(){
+  $(".btn_redirect").on('click', function(){
+    var url = window.location.href;
+    window.location = "/video_page.html";
+
+  });
+});
+
+$(document).ready(function(){
+  $(".btn_redirect_two").on('click', function(){
+    var url = window.location.href;
+    window.location = "../index.html";
+
+  });
+});
+
+var capture;
+// var cnv;
+
+// function centerCanvas(){
+//     var x = (windowWidth - width) / 2;
+//     var y = (windorHeight - height) / 2;
+//     cnv.position
+// }
+
+function setup() {
+    createCanvas(390, 100);
+    // background(51);
+    capture = createCapture(VIDEO);
+    captured_size = capture.size(980, 900);
+    captured_size.parent('video_page')
+    //capture.hide();
+}
+
+function draw() {
+
+}
 
     // clickable object
     	// update the object with the variable to display the given number of clicks
@@ -38,7 +72,7 @@ $( document ).ready(function() {
 
 // 	});
     
-});
+// });
 
 
 

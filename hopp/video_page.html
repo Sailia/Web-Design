@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/hopp.css">   
+    
+</head>
+
+<body>
+  <div class="main">
+  <div class="business_page">
+    <div class="header_two">
+      <img src="images/menu_bar.png" class="menu_bar_two">
+      <img src="images/business_page_logo_one.png" class="business_page_logo_one">
+      <button class="btn_redirect_two" data-redirect-to="/index.html">
+    </div>
+    <div id="video_page">
+      
+    </div>
+    <div id="map"></div>
+    <div class="address_info">
+      <img src="images/address_info.png">
+    </div>
+      <script type="text/javascript">
+        // Map options
+        function initMap(){
+          var options = {
+            zoom:15,
+            center:{lat:41.9805, lng:-87.7182}
+          }
+
+          // New map
+          var map = new google.maps.Map(document.getElementById('map'), options);
+
+          // Add marker
+          var marker = new google.maps.Marker({
+            position:{lat:41.9805, lng:-87.7182},
+            map:map,
+            icon: 'images/bunny_two.png'
+          });
+        }
+      </script>
+    </div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGFo0-B9Z3S-pUmVJqIYHucUzjvikVQc0&callback=initMap">
+    </script>
+    <script src="js/hopp_jquery.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">      
+    <script src="jslib/jquery-3.3.1.min.js"></script>
+    <script src="jslib/p5.min.js"></script>
+    <script src="jslib/p5.dom.js"></script>
+    <script src="jslib/p5.sound.js"></script>  
+  </body>
+</html>
